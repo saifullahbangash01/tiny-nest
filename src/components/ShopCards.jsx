@@ -5,25 +5,25 @@ const ages = [
   {
     title: "0-2 Years",
     text: "Soft, safe & adorable",
-    image: "/assets/age/0-2.webp",
+    image: `${import.meta.env.BASE_URL}assets/age/0-2.webp`,
     tone: "pink",
   },
   {
     title: "2-4 Years",
     text: "Play, Learn & Explore",
-    image: "/assets/age/2-4.webp",
+    image: `${import.meta.env.BASE_URL}assets/age/2-4.webp`,
     tone: "yellow",
   },
   {
     title: "4-8 Years",
     text: "Fun styles for active days",
-    image: "/assets/age/4-8.webp",
+    image: `${import.meta.env.BASE_URL}assets/age/4-8.webp`,
     tone: "blue",
   },
   {
     title: "8-12 Years",
     text: "Trendy looks for confident kids",
-    image: "/assets/age/8-12.webp",
+    image: `${import.meta.env.BASE_URL}assets/age/8-12.webp`,
     tone: "purple",
   },
 ];
@@ -32,25 +32,25 @@ const collections = [
   {
     title: "School Essentials",
     text: "Smart looks for bright minds",
-    image: "/assets/collections/school.webp",
+    image: `${import.meta.env.BASE_URL}assets/collections/school.webp`,
     tone: "blue",
   },
   {
     title: "Party Outfits",
     text: "Make every moment special",
-    image: "/assets/collections/party.webp",
+    image: `${import.meta.env.BASE_URL}assets/collections/party.webp`,
     tone: "pink",
   },
   {
     title: "Everyday Basics",
     text: "Comfort they'll love every day",
-    image: "/assets/collections/basics.webp",
+    image: `${import.meta.env.BASE_URL}assets/collections/basics.webp`,
     tone: "mint",
   },
   {
     title: "Denim Collection",
     text: "Cool, classic & always in style",
-    image: "/assets/collections/denim.webp",
+    image: `${import.meta.env.BASE_URL}assets/collections/denim.webp`,
     tone: "purple",
   },
 ];

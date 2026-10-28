@@ -1,6 +1,6 @@
 import { useState } from "react";
 import { Clock, Mail, MapPin, Phone } from "lucide-react";
-import PageLayout from "../components/PageLayout";
+import PageLayout from "../components/Pagelayout";
 import { SITE } from "../data/Siteinfo";
 
 

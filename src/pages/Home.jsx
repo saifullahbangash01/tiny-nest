@@ -224,7 +224,7 @@ export default function Home() {
           decoding="async"
           width="600"
           height="440"
-          src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR8SGWr5StqVOWfan-Wj9lEXDTI-1Khrsev2hn6imNjWaP6RThAF9HIYu8&s=10"
+          src={`${import.meta.env.BASE_URL}assets/images/products/arrivals.jfif`}
           alt="A happy child with a favorite soft toy"
         />
 

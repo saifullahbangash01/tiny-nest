@@ -1,4 +1,3 @@
-
 export const products = [
   {
     slug: "winter-cap",
@@ -6,19 +5,18 @@ export const products = [
     name: "Kids Winter Cap",
     type: "Soft & snug",
     price: 12.99,
-    image:
-      "/assets/images/products/cap-1.jpg",
+    image: `${import.meta.env.BASE_URL}assets/images/products/cap-1.jpg`,
     shortDescription:
       "A warm, fleece-lined winter cap with adorable bear ears for little ones.",
     longDescription:
       "Keep your little one warm and comfortable on chilly days with this soft knitted winter cap. Designed with a cozy fleece lining and protective ear flaps, it helps keep little ears snug during outdoor adventures. The playful bear-ear design adds a charming touch to everyday winter outfits.",
     thumbnails: [
-      "/assets/images/products/cap-1.jpg",
-      "/assets/images/products/cap-2.jpg",
-      "/assets/images/products/cap-3.jpg",
-      "/assets/images/products/cap-4.jpg",
-      "/assets/images/products/cap-5.jpg",
-      "/assets/images/products/cap-6.jpg",
+      `${import.meta.env.BASE_URL}assets/images/products/cap-1.jpg`,
+      `${import.meta.env.BASE_URL}assets/images/products/cap-2.jpg`,
+      `${import.meta.env.BASE_URL}assets/images/products/cap-3.jpg`,
+      `${import.meta.env.BASE_URL}assets/images/products/cap-4.jpg`,
+      `${import.meta.env.BASE_URL}assets/images/products/cap-5.jpg`,
+      `${import.meta.env.BASE_URL}assets/images/products/cap-6.jpg`,
     ],
     tag: "BESTSELLER",
     description:
@@ -37,16 +35,16 @@ export const products = [
     name: "Comfort Jog Pants",
     type: "Everyday favourite",
     price: 15.99,
-    image: "/assets/images/products/jog-pants-1.jpg",
+    image: `${import.meta.env.BASE_URL}assets/images/products/jog-pants-1.jpg`,
     shortDescription:
       "Soft and comfortable jog pants designed for everyday play and movement.",
     longDescription:
       "Make everyday dressing easy with these comfortable jog pants. Designed for little ones who love to crawl, climb, explore, and play, they offer a relaxed feel for daily activities. The cotton terry blend provides a soft touch, while the elastic waistband and cuffed hems help create a comfortable fit.",
     thumbnails: [
-      "/assets/images/products/jog-pants-2.jpg",
-      "/assets/images/products/jog-pants-3.jpg",
-      "/assets/images/products/jog-pants-4.jpg",
-      "/assets/images/products/jog-pants-5.jpg",
+      `${import.meta.env.BASE_URL}assets/images/products/jog-pants-2.jpg`,
+      `${import.meta.env.BASE_URL}assets/images/products/jog-pants-3.jpg`,
+      `${import.meta.env.BASE_URL}assets/images/products/jog-pants-4.jpg`,
+      `${import.meta.env.BASE_URL}assets/images/products/jog-pants-5.jpg`,
     ],
     tag: "PARENT PICK",
     description:
@@ -65,17 +63,16 @@ export const products = [
     name: "Kids Hooded Jacket",
     type: "A little extra cozy",
     price: 22.99,
-    image:
-      "/assets/images/products/hooded-jacket-1.jpg",
+    image: `${import.meta.env.BASE_URL}assets/images/products/hooded-jacket-1.jpg`,
     shortDescription:
       "A cozy zip-up hooded jacket for comfortable everyday layering.",
     longDescription:
       "Add an extra layer of comfort to your child's wardrobe with this cozy hooded jacket. Its cotton-rich sweatshirt fabric makes it a practical choice for everyday outfits and cooler days. The front zip fastening includes a chin guard for added comfort, making layering simple for little adventurers.",
     thumbnails: [
-      "/assets/images/products/hooded-jacket-1.jpg",
-      "/assets/images/products/hooded-jacket-2.jpg",
-      "/assets/images/products/hooded-jacket-3.jpg",
-      "/assets/images/products/hooded-jacket-4.jpg",
+      `${import.meta.env.BASE_URL}assets/images/products/hooded-jacket-1.jpg`,
+      `${import.meta.env.BASE_URL}assets/images/products/hooded-jacket-2.jpg`,
+      `${import.meta.env.BASE_URL}assets/images/products/hooded-jacket-3.jpg`,
+      `${import.meta.env.BASE_URL}assets/images/products/hooded-jacket-4.jpg`,
     ],
     tag: "JUST IN",
     description:
@@ -94,14 +91,13 @@ export const products = [
     name: "Baby Cotton Socks",
     type: "Tiny toes, kept cozy",
     price: 8.99,
-    image:
-      "/assets/images/products/cotton-socks-1.avif",
+    image: `${import.meta.env.BASE_URL}assets/images/products/cotton-socks-1.avif`,
     shortDescription:
       "Soft cotton-blend socks to keep little toes cozy throughout the day.",
     longDescription:
       "Keep tiny toes comfortable with this colorful set of baby cotton socks. Made with a soft cotton blend, these everyday essentials are ideal for pairing with baby outfits throughout the year. The practical multi-pair pack makes it easy to keep a fresh pair ready for your little one's daily adventures.",
     thumbnails: [
-      "/assets/images/products/cotton-socks-1.avif",
+      `${import.meta.env.BASE_URL}assets/images/products/cotton-socks-1.avif`,
     ],
     tag: "SOFT COTTON",
     description:
@@ -120,16 +116,15 @@ export const products = [
     name: "Printed T-Shirt",
     type: "Made for play",
     price: 11.99,
-    image:
-      "/assets/images/products/printed-tee-1.webp",
+    image: `${import.meta.env.BASE_URL}assets/images/products/printed-tee-1.webp`,
     shortDescription:
       "A cheerful cotton jersey T-shirt made for everyday comfort and play.",
     longDescription:
       "Bring a playful touch to everyday outfits with this comfortable printed T-shirt. Its soft cotton jersey fabric is suitable for active days, family outings, and casual occasions. Shoulder snaps on infant sizes make changing easier, while the versatile style pairs effortlessly with shorts, jog pants, and other wardrobe favorites.",
     thumbnails: [
-      "/assets/images/products/printed-tee-1.webp",
-      "/assets/images/products/printed-tee-2.webp",
-      "/assets/images/products/printed-tee-3.webp",
+      `${import.meta.env.BASE_URL}assets/images/products/printed-tee-1.webp`,
+      `${import.meta.env.BASE_URL}assets/images/products/printed-tee-2.webp`,
+      `${import.meta.env.BASE_URL}assets/images/products/printed-tee-3.webp`,
     ],
     tag: "NEW",
     description:
@@ -148,14 +143,13 @@ export const products = [
     name: "Cotton Baby Romper",
     type: "Soft everyday comfort",
     price: 19.99,
-    image:
-      "/assets/images/products/cotton-romper-1.webp",
+    image: `${import.meta.env.BASE_URL}assets/images/products/cotton-romper-1.webp`,
     shortDescription:
       "A soft cotton baby romper designed for cuddles, naps, and everyday comfort.",
     longDescription:
       "Make everyday dressing comfortable with this soft cotton baby romper. Designed for little ones, it offers a cozy option for playtime, naps, and family outings. Easy-change snap closures help make dressing and diaper changes more convenient, while its simple everyday style makes it a lovely addition to a baby's wardrobe.",
     thumbnails: [
-      "/assets/images/products/cotton-romper-1.webp",
+      `${import.meta.env.BASE_URL}assets/images/products/cotton-romper-1.webp`,
     ],
     tag: "BABY FAVOURITE",
     description:
@@ -174,14 +168,13 @@ export const products = [
     name: "Rainbow Stacking Rings",
     type: "Play, learn & discover",
     price: 14.99,
-    image:
-      "/assets/images/products/rainbow-stacker-1.jfif",
+    image: `${import.meta.env.BASE_URL}assets/images/products/rainbow-stacker-1.jfif`,
     shortDescription:
       "A colorful stacking toy that encourages playful exploration and discovery.",
     longDescription:
       "Make playtime engaging with these colorful rainbow stacking rings. The playful design encourages little ones to explore colors, practice stacking, and develop coordination through hands-on activities. This toy can be a fun addition to supervised playtime as curious minds discover new ways to arrange and stack the rings.",
     thumbnails: [
-      "/assets/images/products/rainbow-stacker-1.jfif", 
+      `${import.meta.env.BASE_URL}assets/images/products/rainbow-stacker-1.jfif`, 
     ],
     tag: "PLAYTIME PICK",
     description:
@@ -200,14 +193,13 @@ export const products = [
     name: "Bath Time Essentials",
     type: "Gentle care, happy splashes",
     price: 18.99,
-    image:
-      "/assets/images/products/bath-time-set-1.jfif",
+    image: `${import.meta.env.BASE_URL}assets/images/products/bath-time-set-1.jfif`,
     shortDescription:
       "Bath-time essentials designed to make little ones' routines more enjoyable.",
     longDescription:
       "Make bath time feel a little more special with this collection of bath-time essentials. Combining practical care items with a charming presentation, it is designed to help create a comfortable daily routine for little ones. Rinse reusable items after use and allow them to air dry. Always supervise children during bath time.",
     thumbnails: [
-      "/assets/images/products/bath-time-set-1.jfif", 
+      `${import.meta.env.BASE_URL}assets/images/products/bath-time-set-1.jfif`, 
     ],
     tag: "LITTLE FAVOURITE",
     description:
@@ -219,22 +211,22 @@ export const products = [
       Includes: "Bath-time essentials set",
     },
   },
-{
+  {
     slug: "girls-bath-time-set",
     category: "girls",
     name: "Girls Bath Time Set",
     type: "Sweet care, happy splashes",
     price: 19.99,
-    image: "/assets/images/products/printed-girls-1.webp",
+    image: `${import.meta.env.BASE_URL}assets/images/products/printed-girls-1.webp`,
     shortDescription:
       "A charming bath-time set designed to make little girls' daily routines more fun and enjoyable.",
     longDescription:
       "Make every bath a special moment with this lovely bath-time essentials set for girls. Designed with a sweet, playful style, it brings practical bath-time items together to help make daily routines more comfortable and enjoyable. Rinse reusable items after use and allow them to air dry. Always supervise children during bath time.",
     thumbnails: [
-      "/assets/images/products/printed-girls-1.webp",
-      "/assets/images/products/printed-girls-2.webp",
-      "/assets/images/products/printed-girls-3.webp",
-      "/assets/images/products/printed-girls-4.webp",
+      `${import.meta.env.BASE_URL}assets/images/products/printed-girls-1.webp`,
+      `${import.meta.env.BASE_URL}assets/images/products/printed-girls-2.webp`,
+      `${import.meta.env.BASE_URL}assets/images/products/printed-girls-3.webp`,
+      `${import.meta.env.BASE_URL}assets/images/products/printed-girls-4.webp`,
     ],
     tag: "LITTLE FAVOURITE",
     description:
@@ -252,13 +244,13 @@ export const products = [
     name: "Boys Bath Time Set",
     type: "Fun care, happy splashes",
     price: 19.99,
-    image: "/assets/images/products/printed-boys-1.webp",
+    image: `${import.meta.env.BASE_URL}assets/images/products/printed-boys-1.webp`,
     shortDescription:
       "A fun bath-time set designed to make little boys' daily routines more enjoyable.",
     longDescription:
       "Make bath time more exciting with this playful bath-time essentials set for boys. Featuring a fun, practical presentation, it is designed to bring a little extra joy to everyday bathing routines. Rinse reusable items after use and allow them to air dry. Always supervise children during bath time.",
     thumbnails: [
-      "/assets/images/products/printed-boys-1.webp", 
+      `${import.meta.env.BASE_URL}assets/images/products/printed-boys-1.webp`, 
     ],
     tag: "LITTLE FAVOURITE",
     description:
@@ -277,13 +269,13 @@ export const products = [
     name: "Girls Floral Summer Dress",
     type: "Soft cotton, cute floral print",
     price: 24.99,
-    image: "/assets/images/products/outfits-girls-1.webp",
+    image: `${import.meta.env.BASE_URL}assets/images/products/outfits-girls-1.webp`,
     shortDescription:
       "A light and breathable floral dress perfect for sunny outdoor play.",
     longDescription:
       "Keep your little princess cool and trendy with this adorable floral summer dress. Crafted from ultra-soft, breathable cotton fabric that gentle on sensitive skin. Features gentle elastic waist detailing and button closure at the back for easy dressing.",
     thumbnails: [
-      "/assets/images/products/outfits-girls-1.webp",
+      `${import.meta.env.BASE_URL}assets/images/products/outfits-girls-1.webp`,
     ],
     tag: "BEST SELLER",
     description:
@@ -301,13 +293,13 @@ export const products = [
     name: "Boys Casual Cotton T-Shirt & Denim Shorts Set",
     type: "Casual playwear, durable comfort",
     price: 27.99,
-    image: "/assets/images/products/outfits-boys-1.jpg",
+    image: `${import.meta.env.BASE_URL}assets/images/products/outfits-boys-1.jpg`,
     shortDescription:
       "A stylish two-piece set featuring a printed tee and flexible denim shorts.",
     longDescription:
       "Get your little adventurer ready for any day out with this durable two-piece outfit. Includes a crew-neck graphic t-shirt and elasticated soft denim shorts for unrestricted movement during playtime.",
     thumbnails: [
-      "/assets/images/products/outfits-boys-1.jpg",
+      `${import.meta.env.BASE_URL}assets/images/products/outfits-boys-1.jpg`,
     ],
     tag: "NEW ARRIVAL",
     description:
@@ -327,17 +319,17 @@ export const products = [
     name: "Girls Sparkly Ballerina Shoes",
     type: "Party wear, cushioned footbed",
     price: 21.99,
-    image: "/assets/images/products/footwear-1.png",
+    image: `${import.meta.env.BASE_URL}assets/images/products/footwear-1.png`,
     shortDescription:
       "Glittery ballerina flats with non-slip soles made for parties and special events.",
     longDescription:
       "Add a magical touch to any outfit with these sparkling ballerina shoes. Designed with padded insoles for all-day cushioning and anti-slip rubber outsoles to keep your little girl stable while running and dancing.",
     thumbnails: [
-      "/assets/images/products/footwear-1.png",
-      "/assets/images/products/footwear-black.jpg",
-      "/assets/images/products/footwear-2.jpg",
-      "/assets/images/products/footwear-3.png",
-      "/assets/images/products/footwear-4.jpg",
+      `${import.meta.env.BASE_URL}assets/images/products/footwear-1.png`,
+      `${import.meta.env.BASE_URL}assets/images/products/footwear-black.jpg`,
+      `${import.meta.env.BASE_URL}assets/images/products/footwear-2.jpg`,
+      `${import.meta.env.BASE_URL}assets/images/products/footwear-3.png`,
+      `${import.meta.env.BASE_URL}assets/images/products/footwear-4.jpg`,
     ],
     tag: "PARTY FAVOURITE",
     description:
@@ -355,13 +347,13 @@ export const products = [
     name: "Boys Sporty Strap Sneakers",
     type: "Active play, hook-and-loop strap",
     price: 25.99,
-    image: "/assets/images/products/footwer-boys-1.jpeg",
+    image: `${import.meta.env.BASE_URL}assets/images/products/footwer-boys-1.jpeg`,
     shortDescription:
       "Lightweight mesh sneakers with easy Velcro straps for active boys.",
     longDescription:
       "Built for speed and everyday playtime fun! These lightweight sneakers feature breathable mesh uppers and an easy hook-and-loop strap so kids can dress themselves effortlessly. Reinforced toe caps protect feet during outdoor sports.",
     thumbnails: [
-      "/assets/images/products/footwer-boys-1.jpeg", 
+      `${import.meta.env.BASE_URL}assets/images/products/footwer-boys-1.jpeg`, 
     ],
     tag: "LITTLE ADVENTURER",
     description:
@@ -373,7 +365,6 @@ export const products = [
       Includes: "1 Pair of Sneakers",
     },
   }
-
 ];
 
 export const imageUrl = (src) => src || "";

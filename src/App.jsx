@@ -11,7 +11,7 @@ import Checkout from "./pages/Checkout";
 import Contact from "./pages/Contact";
 import FAQs from "./pages/Faqs";
 import { Blog } from "./pages/Blog";
-import BlogDetails from "./pages/Blogdetails";
+import BlogDetails from "./pages/BlogDetails";
 
 export default function App() {
   return (

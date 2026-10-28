@@ -1,5 +1,5 @@
  
-import PageLayout from "../components/PageLayout";
+import PageLayout from "../components/Pagelayout";
 const faqs = [
   ["How long does delivery take?", "Orders are prepared in 1–2 working days. UK standard delivery then takes 3–5 working days and express takes 1–2 working days."],
   ["Is shipping free?", "Yes, standard UK shipping is free on orders over £50. Costs for other orders are shown at checkout."],

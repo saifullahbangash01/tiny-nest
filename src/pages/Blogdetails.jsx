@@ -1,7 +1,7 @@
 import { useEffect, useRef, useState } from "react";
 import { ArrowLeft, ArrowRight, Check, Clock, Link2, MessageCircle, Share2, User } from "lucide-react";
 import { Link, Navigate, useParams } from "react-router-dom";
-import PageLayout from "../components/PageLayout";
+import PageLayout from "../components/Pagelayout";
 import { posts } from "../data/posts";
 
 const fmt = (d) =>
@@ -27,8 +27,7 @@ export default function BlogDetails() {
   const articleRef = useRef(null);
   const [progress, setProgress] = useState(0);
   const [copied, setCopied] = useState(false);
-
-  // Padhne ka progress bar
+ 
   useEffect(() => {
     const onScroll = () => {
       const el = articleRef.current;
@@ -55,7 +54,9 @@ export default function BlogDetails() {
       await navigator.clipboard.writeText(url);
       setCopied(true);
       setTimeout(() => setCopied(false), 2000);
-    } catch {}
+    } catch {
+      setCopied(false);
+    }
   };
 
   const share = [

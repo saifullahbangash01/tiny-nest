@@ -1,6 +1,6 @@
 import { Link, Navigate, useParams } from "react-router-dom";
-import PageLayout from "../components/PageLayout";
-import { posts } from "../data/Posts";
+import PageLayout from "../components/Pagelayout";
+import { posts } from "../data/posts";
  
  
 

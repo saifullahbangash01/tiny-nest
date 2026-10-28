@@ -53,7 +53,7 @@ function Brand({ onClick }) {
     >
       <img
         className="brand-logo"
-        src="/assets/logo/tinynest-logo-header.webp"
+        src={`${import.meta.env.BASE_URL}assets/logo/tinynest-logo-header.webp`}
         alt="TinyNest"
         width="150"
         height="110"
