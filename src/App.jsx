@@ -11,7 +11,6 @@ import Checkout from "./pages/Checkout";
 import Contact from "./pages/Contact";
 import FAQs from "./pages/Faqs";
 import { Blog } from "./pages/Blog";
-import BlogDetails from "./pages/BlogDetails";
 
 export default function App() {
   return (
@@ -31,7 +30,6 @@ export default function App() {
           <Route path="/contact" element={<Contact />} />
           <Route path="/faqs" element={<FAQs />} />
           <Route path="/blog" element={<Blog />} />
-          <Route path="/blog/:slug" element={<BlogDetails />} />
           <Route path="*" element={<Navigate to="/" replace />} />
         </Routes>
         <Footer />
