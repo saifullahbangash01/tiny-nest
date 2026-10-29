@@ -204,6 +204,7 @@ export default function Home() {
           </div>
         </Link>
       </section>
+
       <section className="koddid-recommended section-wrap container" id="shop">
         <SectionTitle title="Recommended For You" link="View All Products" />
         <div className="product-grid row row-cols-2 row-cols-md-4 row-cols-xl-6 g-3">
@@ -218,6 +219,7 @@ export default function Home() {
       {/* shop by age and collection section */} 
         <ShopCards />
       {/* end */}
+      
       <section className="koddid-arrivals section-wrap container">
         <img
           loading="lazy"
