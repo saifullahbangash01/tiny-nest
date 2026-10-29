@@ -28,8 +28,8 @@ client-side routes. Use a Node.js version allowed by the `engines` field in
 
 The Google Search Console HTML verification file belongs in `public/` so Vite
 copies it to the deployed site root. Keep its exact Google-provided filename and
-token content; the Vercel filesystem-first route serves it before the SPA
-fallback.
+token content. `/robots.txt` and `/sitemap.xml` are served by Vercel functions
+and build their canonical URLs from the incoming deployment hostname.
 
 The checkout and newsletter are currently front-end demonstrations without
 payment or subscription services. Connect the required backend providers before
