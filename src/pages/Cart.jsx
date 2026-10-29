@@ -1,7 +1,7 @@
 import { ArrowLeft, ArrowRight, Minus, Plus, ShieldCheck, Truck } from "lucide-react";
 import { Link } from "react-router-dom";
 import { imageUrl } from "../data/products";
-import { useCart } from "../context/CartContext";
+import { useCart } from "../context/useCart";
 
 export default function Cart() {
   const { items, count, subtotal, setQty, removeItem } = useCart();

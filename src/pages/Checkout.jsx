@@ -2,7 +2,7 @@ import { useState } from "react";
 import { ArrowLeft, ArrowRight, CheckCircle2, LockKeyhole, ShieldCheck } from "lucide-react";
 import { Link } from "react-router-dom";
 import { imageUrl } from "../data/products";
-import { useCart } from "../context/CartContext";
+import { useCart } from "../context/useCart";
 
 function Field({ label, type = "text", placeholder, wide = false, required = true }) {
   return (

@@ -1,6 +1,6 @@
 import { Link, Navigate, useParams } from "react-router-dom";
 import PageLayout from "../components/Pagelayout";
-import { posts } from "../data/posts";
+import { posts } from "../data/Posts.js";
  
  
 
@@ -75,7 +75,19 @@ export function BlogPost() {
       type="article"
     >
       <article className="content-body">
-        {post.body.map((t, i) => <p key={i}>{t}</p>)}
+        {post.body.map((entry, i) => {
+          if (Array.isArray(entry)) {
+            return (
+              <ul key={i}>
+                {entry.map((item) => <li key={item}>{item}</li>)}
+              </ul>
+            );
+          }
+          if (entry.startsWith("## ")) {
+            return <h2 key={i}>{entry.slice(3)}</h2>;
+          }
+          return <p key={i}>{entry}</p>;
+        })}
         <p><Link to="/blog">← Back to blog</Link></p>
       </article>
     </PageLayout>

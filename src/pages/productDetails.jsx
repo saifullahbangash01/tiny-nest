@@ -2,7 +2,7 @@ import { useEffect, useMemo, useState } from "react";
 import { ArrowLeft, ArrowRight, ChevronLeft, ChevronRight, Heart, Minus, Plus, ShieldCheck, Star, Truck,} from "lucide-react";
 import { Link, Navigate, useParams } from "react-router-dom";
 import ProductCard from "../components/ProductCard";
-import { useCart } from "../context/CartContext";
+import { useCart } from "../context/useCart";
 import { imageUrl, products } from "../data/products";
  
 
@@ -31,6 +31,7 @@ function ProductDetailsInner({ slug }) {
   const [added, setAdded] = useState(false);
   const [activeInfo, setActiveInfo] = useState("description");
   const [reviewFormOpen, setReviewFormOpen] = useState(false);
+  const [thumbStartIndex, setThumbStartIndex] = useState(0);
   
 const [activeImage, setActiveImage] = useState(product?.image || "");
 
@@ -84,9 +85,6 @@ const [reviews, setReviews] = useState(product?.reviews || []);
 const galleryImages = product.thumbnails?.length ? product.thumbnails : [product.image];
 const currentIndex = galleryImages.indexOf(activeImage);
 
-// Add this state inside ProductDetailsInner along with your other useState hooks:
-const [thumbStartIndex, setThumbStartIndex] = useState(0);
- 
 const handlePrevImage = () => {
   const prevIndex = (currentIndex - 1 + galleryImages.length) % galleryImages.length;
   setActiveImage(galleryImages[prevIndex]);

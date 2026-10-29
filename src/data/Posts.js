@@ -1,4 +1,4 @@
-// body mein: normal text = paragraph | "## Heading" = heading | ["a","b"] = bullet list
+// Body entries: strings are paragraphs or headings; arrays are bullet lists.
 export const posts = [
   {
     slug: "how-to-dress-baby-for-winter",

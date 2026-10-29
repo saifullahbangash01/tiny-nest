@@ -1,16 +1,31 @@
-# React + Vite
+# TinyNest
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+TinyNest is a React single-page storefront built with Vite.
 
-Currently, two official plugins are available:
+## Local development
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Oxc](https://oxc.rs)
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/)
+```sh
+npm ci
+npm run dev
+```
 
-## React Compiler
+## Production checks
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+```sh
+npm run lint
+npm run build
+```
 
-## Expanding the ESLint configuration
+Vite writes the production site to `dist/`.
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+## Deploy to Vercel
+
+Import the repository into Vercel and use the Vite preset. The build command is
+`npm run build`, the output directory is `dist`, and the install command is
+`npm ci`. The `vercel.json` rewrite supports direct visits and refreshes on
+client-side routes. Use a Node.js version allowed by the `engines` field in
+`package.json`.
+
+The checkout and newsletter are currently front-end demonstrations without
+payment or subscription services. Connect the required backend providers before
+accepting real orders or subscriptions.

@@ -1,13 +1,14 @@
-import { createContext, useContext, useEffect, useMemo, useReducer } from "react";
+import { useEffect, useMemo, useReducer } from "react";
 import { products } from "../data/products";
+import { CartContext } from "./useCart";
 
-const CartContext = createContext(null);
 const KEY = "tinynest-cart";
 
 const load = () => {
   try {
     return JSON.parse(localStorage.getItem(KEY)) || [];
-  } catch {
+  } catch (error) {
+    console.error("Failed to load the saved cart.", error);
     return [];
   }
 };
@@ -41,7 +42,9 @@ export function CartProvider({ children }) {
   useEffect(() => {
     try {
       localStorage.setItem(KEY, JSON.stringify(raw));
-    } catch {}
+    } catch (error) {
+      console.error("Failed to save the cart.", error);
+    }
   }, [raw]);
 
   const value = useMemo(() => {
@@ -62,5 +65,3 @@ export function CartProvider({ children }) {
 
   return <CartContext.Provider value={value}>{children}</CartContext.Provider>;
 }
-
-export const useCart = () => useContext(CartContext);

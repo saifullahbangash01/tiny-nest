@@ -11,7 +11,7 @@ import {
   X,
 } from "lucide-react";
 import { Link, NavLink, useLocation, useNavigate } from "react-router-dom";
-import { useCart } from "../../context/CartContext";
+import { useCart } from "../../context/useCart";
 import { imageUrl, products } from "../../data/products";
 import { searchProducts } from "../../utils/Search";
 
@@ -66,25 +66,24 @@ export default function Header() {
   const [menuOpen, setMenuOpen] = useState(false);
   const [scrolled, setScrolled] = useState(false);
   const location = useLocation();
+  const routeKey = `${location.pathname}${location.search}`;
+  const routeQuery = new URLSearchParams(location.search).get("q") || "";
   const { count, subtotal } = useCart();
   const navigate = useNavigate();
   const searchRef = useRef(null);
-  const [query, setQuery] = useState("");
-  const [searchOpen, setSearchOpen] = useState(false);
+  const [draftQuery, setDraftQuery] = useState({ key: routeKey, value: routeQuery });
+  const query = draftQuery.key === routeKey ? draftQuery.value : routeQuery;
+  const [searchOpenForRoute, setSearchOpenForRoute] = useState(null);
+  const searchOpen = searchOpenForRoute === routeKey;
   const suggestions = query.trim()
     ? searchProducts(products, query).slice(0, 5)
     : [];
  
-  useEffect(() => {
-    setQuery(new URLSearchParams(location.search).get("q") || "");
-    setSearchOpen(false);
-  }, [location.pathname, location.search]);
-
   // bahar click par dropdown band
   useEffect(() => {
     const onDown = (e) => {
       if (searchRef.current && !searchRef.current.contains(e.target))
-        setSearchOpen(false);
+        setSearchOpenForRoute(null);
     };
     document.addEventListener("mousedown", onDown);
     return () => document.removeEventListener("mousedown", onDown);
@@ -93,16 +92,11 @@ export default function Header() {
   const submitSearch = (e) => {
     e.preventDefault();
     const q = query.trim();
-    setSearchOpen(false);
+    setSearchOpenForRoute(null);
     navigate(q ? `/shop?q=${encodeURIComponent(q)}` : "/shop");
   };
   const selectedCategory = new URLSearchParams(location.search).get("category");
   const closeMenu = () => setMenuOpen(false);
- 
-  useEffect(
-    () => setMenuOpen(false),
-    [location.pathname, location.search, location.hash],
-  );
  
   useEffect(() => {
     const onScroll = () => setScrolled(window.scrollY > 8);
@@ -158,10 +152,10 @@ export default function Header() {
                 value={query}
                 autoComplete="off"
                 onChange={(e) => {
-                  setQuery(e.target.value);
-                  setSearchOpen(true);
+                  setDraftQuery({ key: routeKey, value: e.target.value });
+                  setSearchOpenForRoute(routeKey);
                 }}
-                onFocus={() => setSearchOpen(true)}
+                onFocus={() => setSearchOpenForRoute(routeKey)}
               />
               <button
                 type="submit"
